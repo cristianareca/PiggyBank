@@ -6,4 +6,8 @@
     <string name="Login">Ingresar</string>
     <string name="Funcion1">Funcion 1</string>
     <string name="Funcion2">Funcion 2</string>
+    <string name="Sumar">Sumar</string>
+    <string name="Restar">Restar</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Atras">Atras</string>
 </resources>

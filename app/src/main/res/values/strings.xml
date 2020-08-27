@@ -4,4 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="LoginTitle">Bienvenido a PiggyBank</string>
     <string name="Login">Ingresar</string>
+    <string name="Funcion1">Funcion 1</string>
+    <string name="Funcion2">Funcion 2</string>
 </resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CajaFuerteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/Sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Sumar"
+        />
+    <Button
+        android:id="@+id/Restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Restar"
+        />
+    <Button
+        android:id="@+id/Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Guardar"
+        />
+
+    <Button
+        android:id="@+id/Atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:width="200dp"
+        android:height="40dp"
+        android:text="@string/Atras" />
+</FrameLayout>

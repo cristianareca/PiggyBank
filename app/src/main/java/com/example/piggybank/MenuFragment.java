@@ -42,7 +42,11 @@ public class MenuFragment extends Fragment {
         funcion1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Funcion 1");
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container, CajaFuerteFragment.newInstance());
+                fragmentTransaction.commit();
+                System.out.println("Funciona----");
             }
         });
         funcion2=view.findViewById(R.id.funcionbutton2);

@@ -20,7 +20,7 @@ import android.os.Bundle;
             FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, LoginFragment.newInstance());
             fragmentTransaction.commit();
-
+            System.out.println("Funciona!!!");
         }
 
 }

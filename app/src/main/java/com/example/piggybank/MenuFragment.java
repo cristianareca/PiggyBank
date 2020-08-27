@@ -1,6 +1,10 @@
 package com.example.piggybank;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,21 +12,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
+public class MenuFragment extends Fragment {
 
-public class LoginFragment extends Fragment {
-
-    private Button login;
-    public LoginFragment() {
+    private Button funcion1;
+    private Button funcion2;
+    public MenuFragment() {
         // Required empty public constructor
     }
 
-    public static LoginFragment newInstance() {
-        LoginFragment fragment = new LoginFragment();
+    public static MenuFragment newInstance() {
+        MenuFragment fragment = new MenuFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -32,24 +32,28 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false);
+        return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        login=view.findViewById(R.id.loginbutton);
-        login.setOnClickListener(new View.OnClickListener() {
+        funcion1=view.findViewById(R.id.Funcionbutton);
+        funcion1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.container, MenuFragment.newInstance());
-                fragmentTransaction.commit();
-                System.out.println("Funciona----");
+                System.out.println("Funcion 1");
             }
         });
+        funcion2=view.findViewById(R.id.funcionbutton2);
+        funcion2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Funcion 2");
+            }
+        });
+
+
 
     }
 }

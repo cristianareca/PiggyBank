@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="640dp"
+        android:layout_marginTop="400dp"
         android:width="200dp"
         android:height="40dp"
         android:text="@string/Gen_his" />
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="500dp"
         android:width="200dp"
         android:height="40dp"
         android:text="@string/Atras" />

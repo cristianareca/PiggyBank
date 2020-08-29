@@ -53,6 +53,10 @@ public class MenuFragment extends Fragment {
         funcion2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container, Historial.newInstance());
+                fragmentTransaction.commit();
                 System.out.println("Funcion 2");
             }
         });

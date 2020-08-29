@@ -10,4 +10,6 @@
     <string name="Restar">Restar</string>
     <string name="Guardar">Guardar</string>
     <string name="Atras">Atras</string>
+    <string name="Gen_his">Generar Historial</string>
+    <string name="Tit_his">Historial de Transacciones</string>
 </resources>

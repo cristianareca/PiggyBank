@@ -15,7 +15,7 @@
         android:textColor="#000000"
         android:textSize="36sp" />
      <Button
-    android:id="@+id/Funcionbutton"
+    android:id="@+id/safeButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
@@ -24,7 +24,7 @@
     android:height="40dp"
     android:text="@string/Funcion1" />
     <Button
-        android:id="@+id/funcionbutton2"
+        android:id="@+id/historyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

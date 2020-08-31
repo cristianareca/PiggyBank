@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_menu.Funcionbutton
-import kotlinx.android.synthetic.main.fragment_menu.funcionbutton2
+import kotlinx.android.synthetic.main.fragment_menu.*;
+
+
 class MenuFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -19,7 +19,7 @@ class MenuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Funcionbutton?.setOnClickListener(View.OnClickListener {
+        safeButton?.setOnClickListener(View.OnClickListener {
             val fragmentManager = fragmentManager
             val fragmentTransaction = fragmentManager!!.beginTransaction()
             fragmentTransaction.replace(R.id.container, CajaFuerteFragment())
@@ -28,10 +28,10 @@ class MenuFragment : Fragment() {
             println("Transicion a Caja Fuerte")
         })
 
-        funcionbutton2?.setOnClickListener(View.OnClickListener {
+        historyButton?.setOnClickListener(View.OnClickListener {
             val fragmentManager = fragmentManager
             val fragmentTransaction = fragmentManager!!.beginTransaction()
-            fragmentTransaction.replace(R.id.container, Historial())
+            fragmentTransaction.replace(R.id.container, History())
             fragmentTransaction.addToBackStack("Fourth Transaction")
             fragmentTransaction.commit()
             println("Transicion a Historial")

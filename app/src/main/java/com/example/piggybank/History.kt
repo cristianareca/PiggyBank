@@ -4,20 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_historial.Gen_his
-import kotlinx.android.synthetic.main.fragment_historial.volver
-class Historial : Fragment() {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    // TODO: Rename and change types of parameters
+import kotlinx.android.synthetic.main.fragment_historial.*
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        if (arguments != null) {
-        }
-    }
+class History : Fragment() {
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -28,7 +19,7 @@ class Historial : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Gen_his?.setOnClickListener(View.OnClickListener { println("Generando sirve ") })
+        generate_his?.setOnClickListener(View.OnClickListener { println("Generando sirve ") })
 
         volver?.setOnClickListener(View.OnClickListener {
             val fragmentManager = fragmentManager
@@ -40,8 +31,8 @@ class Historial : Fragment() {
 
     companion object {
         // TODO: Rename and change types and number of parameters
-        fun newInstance(): Historial {
-            val fragment = Historial()
+        fun newInstance(): History {
+            val fragment = History()
             val args = Bundle()
             fragment.arguments = args
             return fragment

@@ -6,10 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_caja_fuerte.Atras;
-import kotlinx.android.synthetic.main.fragment_caja_fuerte.Sumar;
-import kotlinx.android.synthetic.main.fragment_caja_fuerte.Restar;
-import kotlinx.android.synthetic.main.fragment_caja_fuerte.Guardar;
+import kotlinx.android.synthetic.main.fragment_caja_fuerte.*;
 
 class CajaFuerteFragment : Fragment() {
 
@@ -25,13 +22,13 @@ class CajaFuerteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Sumar?.setOnClickListener(View.OnClickListener { println("Se sumo con exito") })
+        sumar?.setOnClickListener(View.OnClickListener { println("Se sumo con exito") })
 
-        Restar?.setOnClickListener(View.OnClickListener { println("Se resto con exito") })
+        restar?.setOnClickListener(View.OnClickListener { println("Se resto con exito") })
 
-        Guardar?.setOnClickListener(View.OnClickListener { println("Se guardo") })
+        guardar?.setOnClickListener(View.OnClickListener { println("Se guardo") })
 
-        Atras?.setOnClickListener(View.OnClickListener {
+        atras?.setOnClickListener(View.OnClickListener {
             println("Chao pescao")
             val fragmentManager = fragmentManager
             val fragmentTransaction = fragmentManager!!.beginTransaction()

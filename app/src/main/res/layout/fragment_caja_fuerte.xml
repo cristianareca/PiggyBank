@@ -17,7 +17,7 @@
         android:layout_marginTop="50dp"/>
 
     <Button
-        android:id="@+id/Sumar"
+        android:id="@+id/sumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="200dp"
@@ -27,7 +27,7 @@
         android:text="@string/Sumar"
         />
     <Button
-        android:id="@+id/Restar"
+        android:id="@+id/restar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="200dp"
@@ -37,7 +37,7 @@
         android:text="@string/Restar"
         />
     <Button
-        android:id="@+id/Guardar"
+        android:id="@+id/guardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="200dp"
@@ -48,7 +48,7 @@
         />
 
     <Button
-        android:id="@+id/Atras"
+        android:id="@+id/atras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

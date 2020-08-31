@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Historial">
+    tools:context=".History">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -16,7 +16,7 @@
         android:textColor="#000000"
         android:textSize="30sp" />
     <Button
-        android:id="@+id/Gen_his"
+        android:id="@+id/generate_his"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

@@ -1,7 +1,9 @@
-package com.example.piggybank
+package com.example.piggybank.UI.Activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.piggybank.R
+import com.example.piggybank.UI.Fragments.MainFragments.LoginFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,38 +1,43 @@
-package com.example.piggybank
+package com.example.piggybank.UI.Fragments.PaymentFragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_historial.*
+import com.example.piggybank.R
+import kotlinx.android.synthetic.main.movements_fragment.*
 
-class History : Fragment() {
+class MakePaymentFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_historial, container, false)
+        return inflater.inflate(R.layout.make_payment_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        generate_his?.setOnClickListener(View.OnClickListener { println("Generando sirve ") })
+        registerEntryButton?.setOnClickListener(View.OnClickListener {
 
-        volver?.setOnClickListener(View.OnClickListener {
-            val fragmentManager = fragmentManager
-            val fragmentTransaction = fragmentManager!!.beginTransaction()
-            fragmentTransaction.replace(R.id.container, MenuFragment())
-            fragmentTransaction.commit()
         })
+
+        registerExpenseButton?.setOnClickListener(View.OnClickListener {
+
+        })
+
+        movementsHistoryButton.setOnClickListener(View.OnClickListener {
+
+        })
+
     }
 
     companion object {
         // TODO: Rename and change types and number of parameters
-        fun newInstance(): History {
-            val fragment = History()
+        fun newInstance(): MakePaymentFragment {
+            val fragment = MakePaymentFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment

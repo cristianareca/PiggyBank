@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/movementsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:text="@string/movementsTitle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_font_size"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/chooseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:text="@string/chooseLabel"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/subtitle_font_size"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movementsTitle"
+        app:layout_constraintBottom_toTopOf="@id/registerEntryButton"
+        />
+
+    <Button
+        android:id="@+id/registerEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:width="@dimen/buttons_width"
+        android:height="@dimen/buttons_height"
+        android:text="@string/registerEntryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseLabel"
+        app:layout_constraintBottom_toTopOf="@id/registerExpenseButton"/>
+
+    <Button
+        android:id="@+id/registerExpenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:width="@dimen/buttons_width"
+        android:height="@dimen/buttons_height"
+        android:text="@string/registerExpenseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerEntryButton"
+        app:layout_constraintBottom_toTopOf="@id/movementsHistoryButton"/>
+
+    <Button
+        android:id="@+id/movementsHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:width="@dimen/buttons_width"
+        android:height="@dimen/buttons_height"
+        android:text="@string/movementsHistoryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerExpenseButton"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

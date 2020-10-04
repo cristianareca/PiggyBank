@@ -1,11 +1,13 @@
-package com.example.piggybank
+package com.example.piggybank.UI.Fragments.MainFragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_menu.*;
+import com.example.piggybank.R
+import com.example.piggybank.UI.Fragments.SafeFragments.SafeFragment
+import kotlinx.android.synthetic.main.menu_fragment.*;
 
 
 class MenuFragment : Fragment() {
@@ -13,30 +15,41 @@ class MenuFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false)
+        return inflater.inflate(R.layout.menu_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        movementsButton?.setOnClickListener(){View.OnClickListener {
+
+        }}
+        paymentButton?.setOnClickListener(View.OnClickListener {
+
+        })
+
+        sendButton?.setOnClickListener(View.OnClickListener {
+
+        })
+
+        obligationsButton.setOnClickListener(View.OnClickListener {
+
+        })
+
+        balanceButton?.setOnClickListener(View.OnClickListener {
+
+        })
+
         safeButton?.setOnClickListener(View.OnClickListener {
             val fragmentManager = fragmentManager
             val fragmentTransaction = fragmentManager!!.beginTransaction()
-            fragmentTransaction.replace(R.id.container, CajaFuerteFragment())
+            fragmentTransaction.replace(R.id.container, SafeFragment())
             fragmentTransaction.addToBackStack("Third Transaction")
             fragmentTransaction.commit()
             println("Transicion a Caja Fuerte")
         })
 
-        historyButton?.setOnClickListener(View.OnClickListener {
-            val fragmentManager = fragmentManager
-            val fragmentTransaction = fragmentManager!!.beginTransaction()
-            fragmentTransaction.replace(R.id.container, History())
-            fragmentTransaction.addToBackStack("Fourth Transaction")
-            fragmentTransaction.commit()
-            println("Transicion a Historial")
-
-        })
     }
 
     companion object {

@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.movements_fragment.*
+import kotlinx.android.synthetic.main.obligations_fragment.*
 
 class ObligationsFragment : Fragment() {
 
@@ -20,17 +21,14 @@ class ObligationsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        registerEntryButton?.setOnClickListener(View.OnClickListener {
-
+        addObligationButton?.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.obligations_to_add)
         })
 
-        registerExpenseButton?.setOnClickListener(View.OnClickListener {
-
+        obligationsHistoryButton?.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.obligations_to_history)
         })
 
-        movementsHistoryButton.setOnClickListener(View.OnClickListener {
-
-        })
 
     }
 

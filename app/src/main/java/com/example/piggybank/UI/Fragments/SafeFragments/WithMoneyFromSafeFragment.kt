@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
 import kotlinx.android.synthetic.main.with_money_from_safe_fragment.*
 
@@ -23,7 +24,7 @@ class WithMoneyFromSafeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
        withMoneyFromSafeButton?.setOnClickListener(View.OnClickListener {
-
+           findNavController().navigate(R.id.with_to_safe)
        })
 
     }

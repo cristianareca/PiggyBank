@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.with_money_from_safe_fragment.*
+import kotlinx.android.synthetic.main.register_entry_fragment.*
 
 class RegisterEntryFragment : Fragment() {
 
@@ -22,8 +23,8 @@ class RegisterEntryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       withMoneyFromSafeButton?.setOnClickListener(View.OnClickListener {
-
+       addEntry?.setOnClickListener(View.OnClickListener {
+           findNavController().navigate(R.id.entry_to_movements)
        })
 
     }

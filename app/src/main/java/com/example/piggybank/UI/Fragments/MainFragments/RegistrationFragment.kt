@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
 import kotlinx.android.synthetic.main.registration_fragment.*
 
@@ -19,13 +20,7 @@ class RegistrationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         registerButton?.setOnClickListener(View.OnClickListener {
-            val fragmentManager = fragmentManager
-            val fragmentTransaction = fragmentManager!!.beginTransaction()
-            fragmentTransaction.replace(R.id.container, MenuFragment())
-            fragmentTransaction.addToBackStack("Second Transaction")
-            println("Transición a Menú")
-            fragmentTransaction.commit()
-
+            findNavController().navigate(R.id.registration_to_login)
         })
 
     }

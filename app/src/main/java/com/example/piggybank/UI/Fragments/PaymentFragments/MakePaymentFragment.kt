@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.movements_fragment.*
+import kotlinx.android.synthetic.main.make_payment_fragment.*
 
 class MakePaymentFragment : Fragment() {
 
@@ -20,17 +21,11 @@ class MakePaymentFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        registerEntryButton?.setOnClickListener(View.OnClickListener {
-
+        makePaymentButton?.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.make_payment_to_payments)
         })
 
-        registerExpenseButton?.setOnClickListener(View.OnClickListener {
 
-        })
-
-        movementsHistoryButton.setOnClickListener(View.OnClickListener {
-
-        })
 
     }
 

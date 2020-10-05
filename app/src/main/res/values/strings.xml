@@ -58,15 +58,8 @@
     <string name="addEntry">Agregar Ingreso</string>
     <string name="addExpense">Agregar Gasto</string>
 
+    <string name="balanceTitle">Mi Balance</string>
 
-    <string name="Funcion2">Historial</string>
-    <string name="Sumar">Sumar</string>
-    <string name="Restar">Restar</string>
-    <string name="Guardar">Guardar</string>
-    <string name="Atras">Atras</string>
-    <string name="Gen_his">Generar Historial</string>
-    <string name="Tit_his">Historial de Transacciones</string>
-    <string name="Title_CajaFuerte"> Caja Fuerte</string>
 
 
 </resources>

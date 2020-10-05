@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.safe_fragment.*;
+import kotlinx.android.synthetic.main.send_money_fragment.*
 
 class SendMoneyFragment : Fragment() {
 
@@ -22,17 +23,14 @@ class SendMoneyFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        addMoneyToSafeButton?.setOnClickListener(View.OnClickListener {
-
+       sendMoneyButton?.setOnClickListener(View.OnClickListener {
+           findNavController().navigate(R.id.send_money_to_send_piggybanker)
         })
 
-        withdrawMoneyFromSafeButton.setOnClickListener(View.OnClickListener {
-
+        sendingHistory?.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.send_money_to_history)
         })
 
-        safeHistoryButton.setOnClickListener(View.OnClickListener {
-
-        })
 
     }
 

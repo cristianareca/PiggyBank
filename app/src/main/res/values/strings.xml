@@ -60,6 +60,8 @@
 
     <string name="balanceTitle">Mi Balance</string>
 
-
+    <string name="movementType">Tipo de Movimiento</string>
+    <string name="movementAmount">Monto del movimiento</string>
+    <string name="movementConcept">Concepto</string>
 
 </resources>

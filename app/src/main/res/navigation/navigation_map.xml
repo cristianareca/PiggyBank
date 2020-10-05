@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/login_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MainFragments.LoginFragment"
+        android:name="com.example.piggybank.UI.Login_Registration.LoginFragment"
         android:label="Login Fragment">
         <action
             android:id="@+id/login_to_registration"
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/registration_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MainFragments.RegistrationFragment"
+        android:name="com.example.piggybank.UI.Login_Registration.RegistrationFragment"
         android:label="Registration Fragment">
         <action
             android:id="@+id/registration_to_login"
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/menu_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MainFragments.MenuFragment"
+        android:name="com.example.piggybank.UI.Menu.MenuFragment"
         android:label="Menu Fragment">
         <action
             android:id="@+id/menu_to_movements"
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/movements_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MovementsFragment.MovementsFragment"
+        android:name="com.example.piggybank.UI.Movements.Fragments.MovementsFragment"
         android:label="Movements Fragment">
         <action
             android:id="@+id/movements_to_entry"
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/register_entry_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MovementsFragment.RegisterEntryFragment"
+        android:name="com.example.piggybank.UI.Movements.Fragments.RegisterEntryFragment"
         android:label="Register Entry Fragment">
         <action
             android:id="@+id/entry_to_movements"
@@ -75,7 +75,7 @@
     </fragment>
     <fragment
         android:id="@+id/register_expense_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MovementsFragment.RegisterExpenseFragment"
+        android:name="com.example.piggybank.UI.Movements.Fragments.RegisterExpenseFragment"
         android:label="Register Expense Fragment">
         <action
             android:id="@+id/expense_to_movements"
@@ -83,7 +83,7 @@
     </fragment>
     <fragment
         android:id="@+id/movements_history_fragment"
-        android:name="com.example.piggybank.UI.Fragments.MovementsFragment.MovementsHistoryFragment"
+        android:name="com.example.piggybank.UI.Movements.Fragments.MovementsHistoryFragment"
         android:label="Movements History Fragment">
         <action
             android:id="@+id/history_to_movements"
@@ -91,7 +91,7 @@
     </fragment>
     <fragment
         android:id="@+id/payments_fragment"
-        android:name="com.example.piggybank.UI.Fragments.PaymentFragments.PaymentsFragment"
+        android:name="com.example.piggybank.UI.Payment.Fragments.PaymentsFragment"
         android:label="Payments Fragment">
         <action
             android:id="@+id/payments_to_make_payment"
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/make_payment_fragment"
-        android:name="com.example.piggybank.UI.Fragments.PaymentFragments.MakePaymentFragment"
+        android:name="com.example.piggybank.UI.Payment.Fragments.MakePaymentFragment"
         android:label="Make Payment Fragment">
         <action
             android:id="@+id/make_payment_to_payments"
@@ -110,7 +110,7 @@
     </fragment>
     <fragment
         android:id="@+id/payments_history_fragment"
-        android:name="com.example.piggybank.UI.Fragments.PaymentFragments.PaymentsHistoryFragment"
+        android:name="com.example.piggybank.UI.Payment.Fragments.PaymentsHistoryFragment"
         android:label="Payments History Fragment">
         <action
             android:id="@+id/history_to_payments"
@@ -118,7 +118,7 @@
     </fragment>
     <fragment
         android:id="@+id/send_money_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SendMoneyFragments.SendMoneyFragment"
+        android:name="com.example.piggybank.UI.SendMoney.Fragments.SendMoneyFragment"
         android:label="Send Money Fragment">
         <action
             android:id="@+id/send_money_to_send_piggybanker"
@@ -129,7 +129,7 @@
     </fragment>
     <fragment
         android:id="@+id/send_piggybanker_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SendMoneyFragments.SendPiggybankerFragment"
+        android:name="com.example.piggybank.UI.SendMoney.Fragments.SendPiggybankerFragment"
         android:label="Send Piggybanker Fragment">
         <action
             android:id="@+id/send_piggybanker_to_send_money"
@@ -137,7 +137,7 @@
     </fragment>
     <fragment
         android:id="@+id/sending_history"
-        android:name="com.example.piggybank.UI.Fragments.SendMoneyFragments.SendingHistoryFragment"
+        android:name="com.example.piggybank.UI.SendMoney.Fragments.SendingHistoryFragment"
         android:label="Sending History Fragment">
         <action
             android:id="@+id/history_to_send_money"
@@ -145,7 +145,7 @@
     </fragment>
     <fragment
         android:id="@+id/obligations_fragment"
-        android:name="com.example.piggybank.UI.Fragments.ObligationsFragments.ObligationsFragment"
+        android:name="com.example.piggybank.UI.Obligations.Fragments.ObligationsFragment"
         android:label="Obligations Fragment">
         <action
             android:id="@+id/obligations_to_add"
@@ -156,7 +156,7 @@
     </fragment>
     <fragment
         android:id="@+id/add_obligation_fragment"
-        android:name="com.example.piggybank.UI.Fragments.ObligationsFragments.AddObligationFragment"
+        android:name="com.example.piggybank.UI.Obligations.Fragments.AddObligationFragment"
         android:label="Add Obligation Fragment">
         <action
             android:id="@+id/add_to_obligation"
@@ -164,7 +164,7 @@
     </fragment>
     <fragment
         android:id="@+id/obligations_history_fragment"
-        android:name="com.example.piggybank.UI.Fragments.ObligationsFragments.ObligationsHistoryFragment"
+        android:name="com.example.piggybank.UI.Obligations.Fragments.ObligationsHistoryFragment"
         android:label="Obligations History Fragment">
         <action
             android:id="@+id/history_to_obligations"
@@ -172,7 +172,7 @@
     </fragment>
     <fragment
         android:id="@+id/balance_fragment"
-        android:name="com.example.piggybank.UI.Fragments.BalanceFragments.BalanceFragment"
+        android:name="com.example.piggybank.UI.Balance.Fragments.BalanceFragment"
         android:label="Balance Fragment">
 
     </fragment>
@@ -180,7 +180,7 @@
 
     <fragment
         android:id="@+id/safe_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SafeFragments.SafeFragment"
+        android:name="com.example.piggybank.UI.Safe.Fragments.SafeFragment"
         android:label="Safe Fragment">
         <action
             android:id="@+id/safe_to_add"
@@ -194,7 +194,7 @@
     </fragment>
     <fragment
         android:id="@+id/add_money_to_safe_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SafeFragments.AddMoneyToSafeFragment"
+        android:name="com.example.piggybank.UI.Safe.Fragments.AddMoneyToSafeFragment"
         android:label="Add Money to Safe Fragment">
         <action
             android:id="@+id/add_to_safe"
@@ -202,7 +202,7 @@
     </fragment>
     <fragment
         android:id="@+id/withdraw_money_from_safe_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SafeFragments.WithMoneyFromSafeFragment"
+        android:name="com.example.piggybank.UI.Safe.Fragments.WithMoneyFromSafeFragment"
         android:label="Withdraw money from safe fragment">
         <action
             android:id="@+id/with_to_safe"
@@ -210,7 +210,7 @@
     </fragment>
     <fragment
         android:id="@+id/safe_movements_fragment"
-        android:name="com.example.piggybank.UI.Fragments.SafeFragments.SafeMovementsFragment"
+        android:name="com.example.piggybank.UI.Safe.Fragments.SafeMovementsFragment"
         android:label="Safe Movements Fragment">
         <action
             android:id="@+id/movements_to_safe"

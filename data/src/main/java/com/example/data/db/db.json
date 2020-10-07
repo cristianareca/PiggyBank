@@ -1,0 +1,20 @@
+{
+  "movements": [
+    { "movementType": "Ingreso", "movementAmount": "900000", "movementConcept": "Salario"},
+    { "movementType": "Gasto", "movementAmount": "400000", "movementConcept": "Arriendo"},
+    { "movementType": "Ingreso", "movementAmount": "50000", "movementConcept": "Regalo Cumple"},
+    { "movementType": "Gasto", "movementAmount": "200000", "movementConcept": "Alimentacion"},
+    { "movementType": "Ingreso", "movementAmount": "25000", "movementConcept": "Pago Deuda"},
+    { "movementType": "Gasto", "movementAmount": "25000", "movementConcept": "Salida a Cine"},
+    { "movementType": "Gasto", "movementAmount": "900000", "movementConcept": "Compra Internet"}
+  ],
+  "safes": [
+    { "safeAmount": "100000", "safeConcept": "Para el cumpleaños", "safeDate": "11/03/2020"},
+    { "safeAmount": "800000", "safeConcept": "Para el pc", "safeDate": "11/04/2020"},
+    { "safeAmount": "700000", "safeConcept": "Para la moto", "safeDate": "11/04/2020"},
+    { "safeAmount": "600000", "safeConcept": "Para el tv", "safeDate": "11/05/2020"},
+    { "safeAmount": "900000", "safeConcept": "Para la moto", "safeDate": "11/06/2020"},
+    { "safeAmount": "50000", "safeConcept": "Para un pollito", "safeDate": "11/07/2020"},
+    { "safeAmount": "100000", "safeConcept": "Para la salida", "safeDate": "11/08/2020"}
+  ]
+}

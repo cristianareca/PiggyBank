@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_map"
+    app:startDestination="@id/login_fragment"
+
+    >
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.piggybank.ui.login_registration.LoginFragment"
+        android:label="Login Fragment">
+        <action
+            android:id="@+id/login_to_registration"
+            app:destination="@id/registration_fragment" />
+        <action
+            android:id="@+id/login_to_menu"
+            app:destination="@id/menu_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="com.example.piggybank.ui.login_registration.RegistrationFragment"
+        android:label="Registration Fragment">
+        <action
+            android:id="@+id/registration_to_menu"
+            app:destination="@id/menu_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.example.piggybank.ui.menu.MenuFragment"
+        android:label="Menu Fragment">
+        <action
+            android:id="@+id/menu_to_movements"
+            app:destination="@id/movements_fragment" />
+        <action
+            android:id="@+id/menu_to_payments"
+            app:destination="@id/payments_fragment" />
+        <action
+            android:id="@+id/menu_to_send_money"
+            app:destination="@id/send_money_fragment" />
+        <action
+            android:id="@+id/menu_to_obligations"
+            app:destination="@id/obligations_fragment" />
+        <action
+            android:id="@+id/menu_to_balance"
+            app:destination="@id/balance_fragment" />
+        <action
+            android:id="@+id/menu_to_safe"
+            app:destination="@id/safe_fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/movements_fragment"
+        android:name="com.example.piggybank.ui.movements.fragments.MovementsFragment"
+        android:label="Movements Fragment">
+        <action
+            android:id="@+id/movements_to_entry"
+            app:destination="@id/register_entry_fragment" />
+        <action
+            android:id="@+id/movements_to_expense"
+            app:destination="@id/register_expense_fragment" />
+        <action
+            android:id="@+id/movements_to_history"
+            app:destination="@id/movements_history_fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/register_entry_fragment"
+        android:name="com.example.piggybank.ui.movements.fragments.RegisterEntryFragment"
+        android:label="Register Entry Fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/register_expense_fragment"
+        android:name="com.example.piggybank.ui.movements.fragments.RegisterExpenseFragment"
+        android:label="Register Expense Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/movements_history_fragment"
+        android:name="com.example.piggybank.ui.movements.fragments.MovementsHistoryFragment"
+        android:label="Movements History Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/payments_fragment"
+        android:name="com.example.piggybank.ui.payment.fragments.PaymentsFragment"
+        android:label="Payments Fragment">
+        <action
+            android:id="@+id/payments_to_make_payment"
+            app:destination="@id/make_payment_fragment" />
+        <action
+            android:id="@+id/payments_to_history"
+            app:destination="@id/payments_history_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/make_payment_fragment"
+        android:name="com.example.piggybank.ui.payment.fragments.MakePaymentFragment"
+        android:label="Make Payment Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/payments_history_fragment"
+        android:name="com.example.piggybank.ui.payment.fragments.PaymentsHistoryFragment"
+        android:label="Payments History Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/send_money_fragment"
+        android:name="com.example.piggybank.ui.sendMoney.fragments.SendMoneyFragment"
+        android:label="Send Money Fragment">
+        <action
+            android:id="@+id/send_money_to_send_piggybanker"
+            app:destination="@id/send_piggybanker_fragment" />
+        <action
+            android:id="@+id/send_money_to_history"
+            app:destination="@id/sending_history" />
+    </fragment>
+    <fragment
+        android:id="@+id/send_piggybanker_fragment"
+        android:name="com.example.piggybank.ui.sendMoney.fragments.SendPiggybankerFragment"
+        android:label="Send Piggybanker Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/sending_history"
+        android:name="com.example.piggybank.ui.sendMoney.fragments.SendingHistoryFragment"
+        android:label="Sending History Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/obligations_fragment"
+        android:name="com.example.piggybank.ui.obligations.fragments.ObligationsFragment"
+        android:label="Obligations Fragment">
+        <action
+            android:id="@+id/obligations_to_add"
+            app:destination="@id/add_obligation_fragment" />
+        <action
+            android:id="@+id/obligations_to_history"
+            app:destination="@id/obligations_history_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_obligation_fragment"
+        android:name="com.example.piggybank.ui.obligations.fragments.AddObligationFragment"
+        android:label="Add Obligation Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/obligations_history_fragment"
+        android:name="com.example.piggybank.ui.obligations.fragments.ObligationsHistoryFragment"
+        android:label="Obligations History Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/balance_fragment"
+        android:name="com.example.piggybank.ui.balance.Fragments.BalanceFragment"
+        android:label="Balance Fragment">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/safe_fragment"
+        android:name="com.example.piggybank.ui.safe.fragments.SafeFragment"
+        android:label="Safe Fragment">
+        <action
+            android:id="@+id/safe_to_add"
+            app:destination="@id/add_money_to_safe_fragment" />
+        <action
+            android:id="@+id/safe_to_with"
+            app:destination="@id/withdraw_money_from_safe_fragment" />
+        <action
+            android:id="@+id/safe_to_movements"
+            app:destination="@id/safe_movements_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_money_to_safe_fragment"
+        android:name="com.example.piggybank.ui.safe.fragments.AddMoneyToSafeFragment"
+        android:label="Add Money to Safe Fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/withdraw_money_from_safe_fragment"
+        android:name="com.example.piggybank.ui.safe.fragments.WithMoneyFromSafeFragment"
+        android:label="Withdraw money from safe fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/safe_movements_fragment"
+        android:name="com.example.piggybank.ui.safe.fragments.SafeMovementsFragment"
+        android:label="Safe Movements Fragment">
+
+    </fragment>
+
+
+</navigation>

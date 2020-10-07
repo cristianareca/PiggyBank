@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.safe
+package com.example.piggybank.ui.safe.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

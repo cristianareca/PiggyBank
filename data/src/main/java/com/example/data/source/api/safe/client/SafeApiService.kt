@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface SafeApiService {
-    @GET("/safes")
+    @GET("/cristianareca/DBPiggybank/safes")
     fun getAllSafes(): Call<List<SafeApiEntity>>
 
 

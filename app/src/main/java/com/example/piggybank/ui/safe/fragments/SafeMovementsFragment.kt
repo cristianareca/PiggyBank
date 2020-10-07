@@ -7,13 +7,11 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.piggybank.R
-import com.example.piggybank.ui.movements.Adapter.Items.MovementItem
-import com.example.piggybank.ui.safe.Adapter.Items.SafeItem
-import com.example.piggybank.ui.safe.SafesViewModel
+import com.example.piggybank.ui.safe.item.SafeItem
+import com.example.piggybank.ui.safe.viewModel.SafesViewModel
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 import dagger.android.support.DaggerFragment
-import kotlinx.android.synthetic.main.safe_movements_fragment.*
 import kotlinx.android.synthetic.main.safe_movements_fragment.*
 import kotlinx.android.synthetic.main.with_money_from_safe_fragment.*
 import javax.inject.Inject

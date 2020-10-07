@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.movements
+package com.example.piggybank.ui.movements.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -23,6 +23,7 @@ class MovementsViewModel
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribeWith(object : DisposableSingleObserver<List<Movement>>(){
                             override fun onSuccess(t: List<Movement>?) {
+                                print(t.toString())
                                 movementsLiveData.value = t
                             }
 

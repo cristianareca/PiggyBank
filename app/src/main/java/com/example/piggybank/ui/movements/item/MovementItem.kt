@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.movements.Adapter.Items
+package com.example.piggybank.ui.movements.item
 
 import com.example.domain.movement.model.Movement
 import com.example.piggybank.R

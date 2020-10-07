@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.safe.Adapter.Items
+package com.example.piggybank.ui.safe.item
 
 import com.example.domain.safe.model.Safe
 import com.example.piggybank.R

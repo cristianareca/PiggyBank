@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface MovementApiService {
-    @GET("/movements")
+    @GET("/cristianareca/DBPiggybank/movements")
     fun getAllMovements(): Call<List<MovementApiEntity>>
 
 

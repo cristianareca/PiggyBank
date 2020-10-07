@@ -18,7 +18,7 @@ class DataSourceApiModule {
     internal fun provideRetrofit() =
 
             Retrofit.Builder()
-                    .baseUrl("http://localhost:3000")
+                    .baseUrl("https://my-json-server.typicode.com")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
 

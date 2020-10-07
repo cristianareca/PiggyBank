@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.piggybank.R
-import com.example.piggybank.ui.movements.Adapter.Items.MovementItem
-import com.example.piggybank.ui.movements.MovementsViewModel
+import com.example.piggybank.ui.movements.item.MovementItem
+import com.example.piggybank.ui.movements.viewModel.MovementsViewModel
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 import dagger.android.support.DaggerFragment

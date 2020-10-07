@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.safe_fragment.*;
 
 class BalanceFragment : Fragment() {
 

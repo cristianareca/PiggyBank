@@ -1,8 +1,8 @@
 package com.example.data.di
 
 
-import com.example.data.repository.MovementRepositoryImpl
-import com.example.data.source.api.Movement.client.MovementApiClient
+import com.example.data.repository.movement.MovementRepositoryImpl
+import com.example.data.source.api.movement.client.MovementApiClient
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

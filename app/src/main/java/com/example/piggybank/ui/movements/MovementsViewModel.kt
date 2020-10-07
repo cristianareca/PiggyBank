@@ -16,6 +16,7 @@ class MovementsViewModel
     ): BaseViewModel(){
 
     private val movementsLiveData= MutableLiveData<List<Movement>>()
+    private val movementsErrorLiveData =MutableLiveData<Unit>()
     init {
         compositeDisposable.add(
                 getMovementsUseCase.execute()
@@ -26,7 +27,7 @@ class MovementsViewModel
                             }
 
                             override fun onError(e: Throwable?) {
-                                //nothing
+                                movementsErrorLiveData.value= Unit
                             }
                         })
         )

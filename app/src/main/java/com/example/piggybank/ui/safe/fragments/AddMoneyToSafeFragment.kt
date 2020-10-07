@@ -24,8 +24,7 @@ class AddMoneyToSafeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         addMoneyToSafeButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.add_to_safe)
-        })
+             })
 
     }
 

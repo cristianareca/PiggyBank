@@ -20,7 +20,7 @@ class RegistrationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         registerButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.registration_to_login)
+            findNavController().navigate(R.id.registration_to_menu)
         })
 
     }

@@ -1,0 +1,11 @@
+{
+  "movements": [
+    { "movementType": "Ingreso", "movementAmount": "900000", "movementConcept": "Salario"},
+    { "movementType": "Gasto", "movementAmount": "400000", "movementConcept": "Arriendo"},
+    { "movementType": "Ingreso", "movementAmount": "50000", "movementConcept": "Regalo Cumple"},
+    { "movementType": "Gasto", "movementAmount": "200000", "movementConcept": "Alimentacion"},
+    { "movementType": "Ingreso", "movementAmount": "25000", "movementConcept": "Pago Deuda"},
+    { "movementType": "Gasto", "movementAmount": "25000", "movementConcept": "Salida a Cine"},
+    { "movementType": "Gasto", "movementAmount": "900000", "movementConcept": "Compra Internet"}
+  ]
+}

@@ -24,8 +24,7 @@ class RegisterEntryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
        addEntry?.setOnClickListener(View.OnClickListener {
-           findNavController().navigate(R.id.entry_to_movements)
-       })
+             })
 
     }
 

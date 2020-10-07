@@ -24,8 +24,7 @@ class RegisterExpenseFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
        addExpense?.setOnClickListener(View.OnClickListener {
-           findNavController().navigate(R.id.expense_to_movements)
-       })
+             })
 
     }
 

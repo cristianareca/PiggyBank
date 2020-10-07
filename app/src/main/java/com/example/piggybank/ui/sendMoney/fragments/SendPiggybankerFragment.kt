@@ -24,8 +24,7 @@ class SendPiggybankerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         sendMoneyButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.send_piggybanker_to_send_money)
-        })
+              })
 
     }
 

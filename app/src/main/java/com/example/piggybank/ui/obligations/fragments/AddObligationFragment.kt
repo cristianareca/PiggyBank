@@ -24,8 +24,7 @@ class AddObligationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         addObligationButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.add_to_obligation)
-        })
+              })
 
     }
 

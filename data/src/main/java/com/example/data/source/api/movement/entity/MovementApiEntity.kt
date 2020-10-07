@@ -1,4 +1,4 @@
-package com.example.data.source.api.Movement.entity
+package com.example.data.source.api.movement.entity
 
 import com.example.domain.movement.model.Movement
 

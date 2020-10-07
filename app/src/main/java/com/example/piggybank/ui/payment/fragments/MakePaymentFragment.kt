@@ -22,8 +22,7 @@ class MakePaymentFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         makePaymentButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.make_payment_to_payments)
-        })
+               })
 
 
 

@@ -22,17 +22,7 @@ class BalanceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        addMoneyToSafeButton?.setOnClickListener(View.OnClickListener {
 
-        })
-
-        withdrawMoneyFromSafeButton.setOnClickListener(View.OnClickListener {
-
-        })
-
-        safeHistoryButton.setOnClickListener(View.OnClickListener {
-
-        })
 
     }
 

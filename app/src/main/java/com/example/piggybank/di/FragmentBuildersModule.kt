@@ -9,4 +9,5 @@ abstract class FragmentBuildersModule {
 
     @ContributesAndroidInjector
     abstract fun contributeMovementsFragment():MovementsHistoryFragment
+
 }

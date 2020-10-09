@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.payment.fragments
+package com.example.piggybank.ui.payments.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

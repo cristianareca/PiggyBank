@@ -23,12 +23,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+
         android:id="@+id/foundSafesLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_margin"
         android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:text="@string/history"
+
+
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/subtitle_font_size"

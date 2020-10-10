@@ -107,7 +107,7 @@
     </fragment>
     <fragment
         android:id="@+id/send_money_fragment"
-        android:name="com.example.piggybank.ui.sendMoney.fragments.SendMoneyFragment"
+        android:name="com.example.piggybank.ui.send.fragments.SendFragment"
         android:label="Send Money Fragment">
         <action
             android:id="@+id/send_money_to_send_piggybanker"
@@ -118,13 +118,13 @@
     </fragment>
     <fragment
         android:id="@+id/send_piggybanker_fragment"
-        android:name="com.example.piggybank.ui.sendMoney.fragments.SendPiggybankerFragment"
+        android:name="com.example.piggybank.ui.send.fragments.MakeSendFragment"
         android:label="Send Piggybanker Fragment">
 
     </fragment>
     <fragment
         android:id="@+id/sending_history"
-        android:name="com.example.piggybank.ui.sendMoney.fragments.SendingHistoryFragment"
+        android:name="com.example.piggybank.ui.send.fragments.SendHistoryFragment"
         android:label="Sending History Fragment">
 
     </fragment>

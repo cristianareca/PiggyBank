@@ -10,7 +10,7 @@ class SendItem(val send: Send) : Item() {
 
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
         viewHolder.itemView.apply {
-            sendName.text = send.sendPiggiBanker
+            sendPiggyBanker.text = send.sendPiggiBanker
             sendAmount.text = send.sendAmount
             sendDate.text = send.sendDate
         }

@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/sendName"
+            android:id="@+id/sendPiggyBanker"
             android:text="@string/sendName"
             android:layout_marginTop="@dimen/small_margin"
             android:layout_marginBottom="@dimen/small_margin"
@@ -38,7 +38,7 @@
             android:layout_marginStart="@dimen/normal_margin"
             android:textSize="@dimen/normal_font_size"
             android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/sendName"
+            app:layout_constraintTop_toBottomOf="@id/sendPiggyBanker"
             app:layout_constraintBottom_toTopOf="@id/sendDate"
             >
 

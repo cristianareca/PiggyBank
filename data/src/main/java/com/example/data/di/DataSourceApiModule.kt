@@ -5,6 +5,8 @@ import com.example.data.source.api.movement.client.MovementApiClient
 import com.example.data.source.api.movement.client.MovementApiService
 import com.example.data.source.api.payment.client.PaymentApiClient
 import com.example.data.source.api.payment.client.PaymentApiService
+import com.example.data.source.api.send.client.SendApiClient
+import com.example.data.source.api.send.client.SendApiService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -32,5 +34,9 @@ class DataSourceApiModule {
     @Provides
     internal fun providePaymentsApiClient(retrofit: Retrofit) =
            PaymentApiClient(retrofit.create(PaymentApiService::class.java))
+    @Singleton
+    @Provides
+    internal fun provideSendApiClient(retrofit: Retrofit) =
+            SendApiClient(retrofit.create(SendApiService::class.java))
 
 }

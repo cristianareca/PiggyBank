@@ -4,11 +4,13 @@ package com.example.piggybank.di
 import android.app.Application
 import com.example.data.di.DataMovementsModule
 import com.example.data.di.DataPaymentsModule
+import com.example.data.di.DataSendsModule
 import com.example.data.di.DataSourceApiModule
 
 import com.example.piggybank.TestApplication
 import com.example.piggybank.ui.movements.di.MovementsModule
 import com.example.piggybank.ui.payments.di.PaymentsModule
+import com.example.piggybank.ui.send.di.SendModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -25,6 +27,9 @@ import javax.inject.Singleton
             DataSourceApiModule::class,
             PaymentsModule::class,
             DataPaymentsModule::class,
+            SendModule::class,
+            DataSendsModule::class,
+
 
         ]
 )

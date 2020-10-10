@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.payments.fragments
+package com.example.piggybank.ui.send.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,26 +7,23 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.piggybank.R
-import com.example.piggybank.ui.payments.item.PaymentItem
-import com.example.piggybank.ui.payments.viewmodel.PaymentsViewModel
+import com.example.piggybank.ui.send.item.SendItem
+import com.example.piggybank.ui.send.viewModel.SendViewModel
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 import dagger.android.support.DaggerFragment
-import kotlinx.android.synthetic.main.payments_history_fragment.*
+import kotlinx.android.synthetic.main.sending_history_fragment.*
 import kotlinx.android.synthetic.main.with_money_from_safe_fragment.*
 import javax.inject.Inject
 
-class PaymentsHistoryFragment : DaggerFragment()  {
-    @Inject lateinit var viewModel: PaymentsViewModel
-    lateinit var paymentAdapter: GroupAdapter<GroupieViewHolder>
+class SendHistoryFragment : DaggerFragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    @Inject lateinit var viewModel: SendViewModel
+    lateinit var sendAdapter: GroupAdapter<GroupieViewHolder>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.payments_history_fragment, container, false)
+        return inflater.inflate(R.layout.sending_history_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,26 +32,28 @@ class PaymentsHistoryFragment : DaggerFragment()  {
        withMoneyFromSafeButton?.setOnClickListener(View.OnClickListener {
 
        })
-        paymentAdapter= GroupAdapter()
-        recyclerViewPayments.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
-        recyclerViewPayments.adapter=paymentAdapter
-    }
 
+        sendAdapter= GroupAdapter()
+
+        recyclerViewSend.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+        recyclerViewSend.adapter= sendAdapter
+
+    }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel.getPaymentsLiveData().observe(viewLifecycleOwner, Observer { payment ->
-            paymentAdapter.addAll(
-                    payment.map {
-                        PaymentItem(it)
+
+        viewModel.getSendLiveData().observe(viewLifecycleOwner, Observer {send->
+            sendAdapter.addAll(
+                    send.map{
+                        SendItem(it)
                     }
             )
         })
     }
-
     companion object {
         @JvmStatic
-        fun newInstance(): PaymentsHistoryFragment {
-            val fragment = PaymentsHistoryFragment()
+        fun newInstance(): SendHistoryFragment {
+            val fragment = SendHistoryFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment

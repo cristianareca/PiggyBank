@@ -64,4 +64,7 @@
     <string name="movementAmount">Monto del movimiento</string>
     <string name="movementConcept">Concepto</string>
 
+    <string name="sendName">PiggyBanker</string>
+    <string name="sendAmount">Monto</string>
+    <string name="sendDate">Fecha</string>
 </resources>

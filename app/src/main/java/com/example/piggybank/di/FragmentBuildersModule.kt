@@ -1,6 +1,7 @@
 package com.example.piggybank.di
 
 import com.example.piggybank.ui.movements.fragments.MovementsHistoryFragment
+import com.example.piggybank.ui.payments.fragments.PaymentsHistoryFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -9,5 +10,7 @@ abstract class FragmentBuildersModule {
 
     @ContributesAndroidInjector
     abstract fun contributeMovementsFragment():MovementsHistoryFragment
+    @ContributesAndroidInjector
+    abstract fun contributePaymentsFragment():PaymentsHistoryFragment
 
 }

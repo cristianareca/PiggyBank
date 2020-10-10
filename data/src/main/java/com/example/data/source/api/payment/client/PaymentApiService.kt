@@ -8,4 +8,7 @@ import retrofit2.http.GET
 interface PaymentApiService {
     @GET("/cristianareca/DBPiggybank/payments")
     fun getAllPayments(): Call<List<PaymentApiEntity>>
+
+
+
 }

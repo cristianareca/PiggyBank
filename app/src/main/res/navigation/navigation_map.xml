@@ -84,7 +84,7 @@
     </fragment>
     <fragment
         android:id="@+id/payments_fragment"
-        android:name="com.example.piggybank.ui.payment.fragments.PaymentsFragment"
+        android:name="com.example.piggybank.ui.payments.fragments.PaymentsFragment"
         android:label="Payments Fragment">
         <action
             android:id="@+id/payments_to_make_payment"
@@ -95,13 +95,13 @@
     </fragment>
     <fragment
         android:id="@+id/make_payment_fragment"
-        android:name="com.example.piggybank.ui.payment.fragments.MakePaymentFragment"
+        android:name="com.example.piggybank.ui.payments.fragments.MakePaymentFragment"
         android:label="Make Payment Fragment">
 
     </fragment>
     <fragment
         android:id="@+id/payments_history_fragment"
-        android:name="com.example.piggybank.ui.payment.fragments.PaymentsHistoryFragment"
+        android:name="com.example.piggybank.ui.payments.fragments.PaymentsHistoryFragment"
         android:label="Payments History Fragment">
 
     </fragment>

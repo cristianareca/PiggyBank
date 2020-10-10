@@ -27,8 +27,10 @@ class DataSourceApiModule {
     @Provides
     internal fun provideMovementsApiClient(retrofit: Retrofit) =
             MovementApiClient(retrofit.create(MovementApiService::class.java))
-
-    internal fun provideSafesApliClient(retrofit: Retrofit) =
+    @Singleton
+    @Provides
+    internal fun provideSafeApiClient(retrofit: Retrofit) =
             SafeApiClient(retrofit.create(SafeApiService::class.java))
+
 
 }

@@ -25,10 +25,9 @@ class ObligationsFragment : Fragment() {
             findNavController().navigate(R.id.obligations_to_add)
         })
 
-        obligationsHistoryButton?.setOnClickListener(View.OnClickListener {
+        obligationsHistoryButton.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.obligations_to_history)
         })
-
 
     }
 

@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.piggybank.R
-import kotlinx.android.synthetic.main.add_obligation_fragment.*
+import kotlinx.android.synthetic.main.register_entry_fragment.*
 
-class AddObligationFragment : Fragment() {
+class RegisterObligationFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,21 +16,21 @@ class AddObligationFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.add_obligation_fragment, container, false)
+        return inflater.inflate(R.layout.register_entry_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        addObligationButton?.setOnClickListener(View.OnClickListener {
-              })
+       addEntry?.setOnClickListener(View.OnClickListener {
+             })
 
     }
 
     companion object {
         @JvmStatic
-        fun newInstance(): AddObligationFragment {
-            val fragment = AddObligationFragment()
+        fun newInstance(): RegisterObligationFragment {
+            val fragment = RegisterObligationFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment

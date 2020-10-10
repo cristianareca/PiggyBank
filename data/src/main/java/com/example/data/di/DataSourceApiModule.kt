@@ -3,6 +3,8 @@ package com.example.data.di
 
 import com.example.data.source.api.movement.client.MovementApiClient
 import com.example.data.source.api.movement.client.MovementApiService
+import com.example.data.source.api.obligation.client.ObligationApiClient
+import com.example.data.source.api.obligation.client.ObligationApiService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -26,6 +28,12 @@ class DataSourceApiModule {
     @Provides
     internal fun provideMovementsApiClient(retrofit: Retrofit) =
             MovementApiClient(retrofit.create(MovementApiService::class.java))
+
+    @Singleton
+    @Provides
+    internal fun provideObligationsApiClient(retrofit: Retrofit) =
+            ObligationApiClient(retrofit.create(ObligationApiService::class.java))
+
 
 
 }

@@ -11,9 +11,9 @@ import javax.inject.Inject
 
 class MovementsViewModel
 @Inject
-    constructor(
-            private val getMovementsUseCase: GetMovementsUseCase
-    ): BaseViewModel(){
+constructor(
+        private val getMovementsUseCase: GetMovementsUseCase
+): BaseViewModel(){
 
     private val movementsLiveData= MutableLiveData<List<Movement>>()
     private val movementsErrorLiveData =MutableLiveData<Unit>()
@@ -36,8 +36,6 @@ class MovementsViewModel
 
     fun getMovementsLiveData():LiveData <List<Movement>> = movementsLiveData
 }
-
-
 
 
 

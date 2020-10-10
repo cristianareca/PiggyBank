@@ -64,4 +64,7 @@
     <string name="movementAmount">Monto del movimiento</string>
     <string name="movementConcept">Concepto</string>
 
+    <string name="obligationConcept">Concepto</string>
+    <string name="obligationAmount">Monto</string>
+    <string name="obligationDate">Fecha</string>
 </resources>

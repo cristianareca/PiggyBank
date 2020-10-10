@@ -9,9 +9,9 @@ class PaymentItem(val payment: Payment) : Item() {
 
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
         viewHolder.itemView.apply {
-            paymentConcept.text = payment.paymentConcept
             paymentAmount.text = payment.paymentAmount
-
+            paymentConcept.text = payment.paymentConcept
+            paymentDate.text = payment.paymentType
         }
     }
 

@@ -171,7 +171,7 @@
             app:destination="@id/withdraw_money_from_safe_fragment" />
         <action
             android:id="@+id/safe_to_movements"
-            app:destination="@id/safe_movements_fragment" />
+            app:destination="@id/safe_movements_fragment"/>
     </fragment>
     <fragment
         android:id="@+id/add_money_to_safe_fragment"

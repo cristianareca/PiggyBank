@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/paymentAmount"
-            android:text="Concepto"
+            android:text="Monto pagado"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
@@ -32,13 +32,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/paymentConcept"
-            android:text="Monto"
+            android:text="Concepto"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="16dp"
             android:textSize="16sp"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/paymentAmount"
+            app:layout_constraintBottom_toTopOf="@id/paymentDate"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/paymentDate"
+            android:text="Fecha"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/paymentConcept"
+            app:layout_constraintBottom_toBottomOf="parent"
             >
 
         </TextView>

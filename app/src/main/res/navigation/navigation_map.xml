@@ -141,7 +141,7 @@
     </fragment>
     <fragment
         android:id="@+id/add_obligation_fragment"
-        android:name="com.example.piggybank.ui.obligations.fragments.AddObligationFragment"
+        android:name="com.example.piggybank.ui.obligations.fragments.RegisterObligationFragment"
         android:label="Add Obligation Fragment">
 
     </fragment>

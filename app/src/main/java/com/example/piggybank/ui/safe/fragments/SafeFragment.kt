@@ -31,7 +31,7 @@ class SafeFragment : Fragment() {
             findNavController().navigate(R.id.safe_to_with)
         })
 
-        safeHistoryButton.setOnClickListener(View.OnClickListener {
+        safeMovementsButton.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.safe_to_movements);
         })
 

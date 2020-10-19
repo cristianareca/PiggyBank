@@ -5,11 +5,12 @@ import com.example.data.source.api.movement.client.MovementApiClient
 import com.example.data.source.api.movement.client.MovementApiService
 import com.example.data.source.api.obligation.client.ObligationApiClient
 import com.example.data.source.api.obligation.client.ObligationApiService
+import com.example.data.source.api.safe.client.SafeApiClient
+import com.example.data.source.api.safe.client.SafeApiService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
 import javax.inject.Singleton
 
 @Module
@@ -34,6 +35,9 @@ class DataSourceApiModule {
     internal fun provideObligationsApiClient(retrofit: Retrofit) =
             ObligationApiClient(retrofit.create(ObligationApiService::class.java))
 
+
+    internal fun provideSafesApliClient(retrofit: Retrofit) =
+            SafeApiClient(retrofit.create(SafeApiService::class.java))
 
 
 }

@@ -35,8 +35,9 @@ class DataSourceApiModule {
     internal fun provideObligationsApiClient(retrofit: Retrofit) =
             ObligationApiClient(retrofit.create(ObligationApiService::class.java))
 
-
-    internal fun provideSafesApliClient(retrofit: Retrofit) =
+    @Singleton
+    @Provides
+    internal fun provideSafesApiClient(retrofit: Retrofit) =
             SafeApiClient(retrofit.create(SafeApiService::class.java))
 
 

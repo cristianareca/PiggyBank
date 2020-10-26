@@ -16,7 +16,7 @@ class SafeItem(val safe: Safe) : Item() {
         }
     }
 
-    override fun getLayout() = R.layout.movement_list_item
+    override fun getLayout() = R.layout.safe_list_item
 
 
 }

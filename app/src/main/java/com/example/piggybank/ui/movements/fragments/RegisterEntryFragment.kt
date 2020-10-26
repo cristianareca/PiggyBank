@@ -23,7 +23,9 @@ class RegisterEntryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
        addEntry?.setOnClickListener(View.OnClickListener {
-             })
+
+
+       })
 
     }
 

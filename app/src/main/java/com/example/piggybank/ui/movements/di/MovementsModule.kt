@@ -11,6 +11,6 @@ class MovementsModule {
     @Singleton
     @Provides
 
-    internal fun provideGetMovementsUseCase(obligationRepositoryImpl: MovementRepositoryImpl
-    ) = GetMovementsUseCase(obligationRepositoryImpl)
+    internal fun provideGetMovementsUseCase(movementRepositoryImpl: MovementRepositoryImpl
+    ) = GetMovementsUseCase(movementRepositoryImpl)
 }

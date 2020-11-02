@@ -3,7 +3,7 @@ package com.example.piggybank.ui.payments.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.domain.payment.model.Payment
-import com.example.domain.payment.usecase.GePaymenttUseCase
+import com.example.domain.payment.usecase.GetPaymentUseCase
 import com.example.piggybank.BaseViewModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.observers.DisposableSingleObserver
@@ -12,7 +12,7 @@ import javax.inject.Inject
 class PaymentsViewModel
 @Inject
     constructor(
-            private val getPaymentsUseCase: GePaymenttUseCase
+            private val getPaymentsUseCase: GetPaymentUseCase
     ): BaseViewModel(){
 
     private val paymentsLiveData= MutableLiveData<List<Payment>>()

@@ -40,9 +40,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-kapt {
-    generateStubs = true
-}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 

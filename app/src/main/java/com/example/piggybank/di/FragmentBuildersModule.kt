@@ -2,6 +2,7 @@ package com.example.piggybank.di
 
 import com.example.piggybank.ui.movements.fragments.MovementsHistoryFragment
 import com.example.piggybank.ui.obligations.fragments.ObligationsHistoryFragment
+import com.example.piggybank.ui.payments.fragments.PaymentsHistoryFragment
 import com.example.piggybank.ui.safe.fragments.SafeMovementsFragment
 
 import dagger.Module
@@ -19,4 +20,6 @@ abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
     abstract fun contributeSafesFragment():SafeMovementsFragment
 
+    @ContributesAndroidInjector
+    abstract fun contributePaymentsFragment():PaymentsHistoryFragment
 }

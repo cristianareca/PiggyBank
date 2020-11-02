@@ -43,7 +43,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseLabel"
-        tools:listitem="@layout/payments_history_fragment">
+        tools:listitem="@layout/payments_list_item">
     </androidx.recyclerview.widget.RecyclerView>
 
 

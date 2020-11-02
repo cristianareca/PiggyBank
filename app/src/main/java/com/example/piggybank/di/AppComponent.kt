@@ -2,14 +2,12 @@ package com.example.piggybank.di
 
 
 import android.app.Application
-import com.example.data.di.DataMovementsModule
-import com.example.data.di.DataObligationsModule
-import com.example.data.di.DataSafesModule
-import com.example.data.di.DataSourceApiModule
+import com.example.data.di.*
 
 import com.example.piggybank.TestApplication
 import com.example.piggybank.ui.movements.di.MovementsModule
 import com.example.piggybank.ui.obligations.di.ObligationsModule
+import com.example.piggybank.ui.payments.di.PaymentsModule
 import com.example.piggybank.ui.safe.di.SafesModule
 import dagger.BindsInstance
 import dagger.Component
@@ -29,8 +27,9 @@ import javax.inject.Singleton
             DataObligationsModule::class,
             SafesModule::class,
             DataSafesModule::class,
-            DataSourceApiModule::class
-
+            DataSourceApiModule::class,
+            DataPaymentsModule::class,
+            PaymentsModule::class
         ]
 )
 

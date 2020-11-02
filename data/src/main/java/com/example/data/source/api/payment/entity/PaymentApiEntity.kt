@@ -4,13 +4,12 @@ package com.example.data.source.api.payment.entity
 import com.example.domain.payment.model.Payment
 
 data class PaymentApiEntity (
-
-        val paymentType:String,
+        val paymentConcept:String,
         val paymentAmount:String,
-        val paymentConcept:String
+        val paymentDate:String
 )
 
 fun PaymentApiEntity.mapToDomain()=
-        Payment(paymentType,paymentAmount,paymentConcept)
+        Payment(paymentConcept,paymentAmount,paymentDate)
 
 fun List <PaymentApiEntity>.mapToDomain() = map { it.mapToDomain() }

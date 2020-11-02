@@ -11,7 +11,7 @@ class PaymentItem(val payment: Payment) : Item() {
         viewHolder.itemView.apply {
             paymentAmount.text = payment.paymentAmount
             paymentConcept.text = payment.paymentConcept
-            paymentDate.text = payment.paymentType
+            paymentDate.text = payment.paymentDate
         }
     }
 

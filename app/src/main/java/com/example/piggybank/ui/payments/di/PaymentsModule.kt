@@ -1,7 +1,7 @@
 package com.example.piggybank.ui.payments.di
 
 import com.example.data.repository.payment.PaymentRepositoryImpl
-import com.example.domain.payment.usecase.GePaymenttUseCase
+import com.example.domain.payment.usecase.GetPaymentUseCase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -12,5 +12,5 @@ class PaymentsModule {
     @Provides
 
     internal fun provideGetPaymentsUseCase(paymentRepositoryImpl: PaymentRepositoryImpl
-    ) = GePaymenttUseCase(paymentRepositoryImpl)
+    ) = GetPaymentUseCase(paymentRepositoryImpl)
 }

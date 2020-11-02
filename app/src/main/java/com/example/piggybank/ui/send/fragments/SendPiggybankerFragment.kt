@@ -1,4 +1,4 @@
-package com.example.piggybank.ui.sendMoney.fragments
+package com.example.piggybank.ui.send.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

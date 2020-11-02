@@ -13,7 +13,7 @@ class DataObligationsModule {
 
     @Singleton
     @Provides
-    internal fun provideMusicRepository(
+    internal fun provideObligationRepository(
             obligationApiClient: ObligationApiClient
     ) = ObligationRepositoryImpl(obligationApiClient)
 

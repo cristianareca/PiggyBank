@@ -3,15 +3,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_menu_logo"
+        android:src="@drawable/piggybank_logo"
+        app:layout_constraintBottom_toTopOf="@id/menuTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/menuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_margin="@dimen/small_margin"
         android:text="@string/menuTitle"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -19,20 +29,19 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/chooseLabel"
         />
 
     <TextView
         android:id="@+id/chooseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:text="@string/chooseLabel"
+        android:layout_margin="@dimen/smallText"
+        android:text="@string/menuChooseLabel"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/subtitle_font_size"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menuTitle"
@@ -43,10 +52,10 @@
         android:id="@+id/movementsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/movementsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,10 +66,10 @@
         android:id="@+id/paymentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/paymentButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,10 +80,10 @@
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/sendButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,43 +94,31 @@
         android:id="@+id/obligationsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/obligationsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sendButton"
-        app:layout_constraintBottom_toTopOf="@id/balanceButton"/>
-
-    <Button
-        android:id="@+id/balanceButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:width="@dimen/buttons_width"
-        android:height="@dimen/buttons_height"
-        android:text="@string/balanceButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/obligationsButton"
         app:layout_constraintBottom_toTopOf="@id/safeButton"/>
+
 
     <Button
         android:id="@+id/safeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/big_margin"
         android:text="@string/safeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/balanceButton"
-        />
+        app:layout_constraintTop_toBottomOf="@id/obligationsButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 

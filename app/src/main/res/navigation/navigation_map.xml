@@ -42,9 +42,7 @@
         <action
             android:id="@+id/menu_to_obligations"
             app:destination="@id/obligations_fragment" />
-        <action
-            android:id="@+id/menu_to_balance"
-            app:destination="@id/balance_fragment" />
+
         <action
             android:id="@+id/menu_to_safe"
             app:destination="@id/safe_fragment" />
@@ -151,12 +149,7 @@
         android:label="Obligations History Fragment">
 
     </fragment>
-    <fragment
-        android:id="@+id/balance_fragment"
-        android:name="com.example.piggybank.ui.balance.Fragments.BalanceFragment"
-        android:label="Balance Fragment">
 
-    </fragment>
 
 
     <fragment

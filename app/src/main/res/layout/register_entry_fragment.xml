@@ -3,67 +3,74 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_top_menu_title"
+        android:src="@drawable/entry_logo"
+        app:layout_constraintBottom_toTopOf="@id/regEntryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/movementsTitle"
+        android:id="@+id/regEntryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
-        android:text="@string/movementsTitle"
+        android:layout_margin="@dimen/normal_margin"
+        android:text="@string/regEntryTitle"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/title_font_size"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <TextView
-        android:id="@+id/chooseLabel"
+        android:id="@+id/putData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:text="@string/putData"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/subtitle_font_size"
 
+        app:layout_constraintBottom_toTopOf="@id/entryMount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/movementsTitle"
-        app:layout_constraintBottom_toTopOf="@id/entryMount"/>
+        app:layout_constraintTop_toBottomOf="@id/regEntryTitle" />
 
     <EditText
         android:id="@+id/entryMount"
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_margin="@dimen/normal_margin"
+        android:backgroundTint="@color/piggybank_blue"
         android:hint="@string/mount"
-
+        app:layout_constraintBottom_toTopOf="@id/entryConcept"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chooseLabel"
-        app:layout_constraintBottom_toTopOf="@id/entryConcept"/>
+        app:layout_constraintTop_toBottomOf="@id/putData" />
 
     <EditText
         android:id="@+id/entryConcept"
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_margin="@dimen/normal_margin"
+        android:backgroundTint="@color/piggybank_blue"
         android:hint="@string/concept"
-
+        app:layout_constraintBottom_toTopOf="@id/addEntry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/entryMount"
-        app:layout_constraintBottom_toTopOf="@id/addEntry"/>
+        app:layout_constraintTop_toBottomOf="@id/entryMount" />
 
 
     <Button
@@ -71,10 +78,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/big_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/addEntry"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/entryConcept" />

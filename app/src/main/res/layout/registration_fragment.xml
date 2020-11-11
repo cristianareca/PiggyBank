@@ -3,41 +3,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-
-    <TextView
-        android:id="@+id/loginTitle"
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:text="@string/welcomeTitle"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/piggybank_logo"
+        app:layout_constraintBottom_toTopOf="@id/registrationTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_margin"
+        android:text="@string/registrationTitle"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/title_font_size"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/registrationLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:text="@string/registrationLabel"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="@dimen/subtitle_font_size"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginTitle"
-        app:layout_constraintBottom_toTopOf="@id/mailEditText"
-        />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
 
     <EditText
@@ -45,38 +37,36 @@
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:backgroundTint="@color/piggybank_blue"
         android:hint="@string/Correo"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@id/passEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/registrationLabel" />
+        app:layout_constraintTop_toBottomOf="@id/registrationTitle" />
 
     <EditText
         android:id="@+id/passEditText"
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-
+        android:layout_marginTop="@dimen/big_margin"
+        android:backgroundTint="@color/piggybank_blue"
         android:hint="@string/Contrasena"
-
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@id/mailEditText"
-        app:layout_constraintBottom_toTopOf="@id/registerButton"
-        />
+        app:layout_constraintTop_toBottomOf="@id/mailEditText" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
-        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/big_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

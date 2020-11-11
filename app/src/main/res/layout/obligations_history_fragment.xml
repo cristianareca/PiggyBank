@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_elements_margin"
+        android:layout_marginTop="@dimen/big_margin"
         android:text="@string/foundObligations"
         android:textAlignment="center"
         android:textColor="@color/black"

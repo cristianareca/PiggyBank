@@ -4,33 +4,35 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="welcomeTitle">Bienvenido a PiggyBank</string>
-    <string name="loginButton">Ingresar</string>
+    <string name="welcomeTitle">Bienvenido</string>
+    <string name="registrationTitle">Registro</string>
+    <string name="loginButton">Iniciar Sesión</string>
+    <string name="goToRegisterButton">Registrate Aquí</string>
     <string name="registerButton">Registrar</string>
+    <string name="notRegisteredLabel">¿No estás registrado?</string>
     <string name="registrationLabel">Regístrate aquí</string>
-    <string name="loginLabel">Ingresa aquí</string>
     <string name="Correo">Correo electrónico</string>
     <string name="Contrasena">Contraseña</string>
     <string name="toRegisterButton">Registrate Aquí</string>
 
 
-    <string name="menuTitle"> Menu </string>
+    <string name="menuTitle"> Bienvenido a PiggyBank </string>
+    <string name="menuChooseLabel">¿A dónde deseas ir?</string>
     <string name="chooseLabel">Selecciona lo que deseas hacer</string>
     <string name="movementsButton">Mis Movimientos</string>
-    <string name="paymentButton">Pagos</string>
+    <string name="paymentButton">Mis Pagos</string>
     <string name="sendButton">Enviar Dinero</string>
     <string name="obligationsButton">Mis Obligaciones</string>
-    <string name="balanceButton">Mi Balance</string>
-    <string name="safeButton">Caja Fuerte</string>
+    <string name="safeButton">Mi Caja Fuerte</string>
 
-    <string name="safeTitle">Caja Fuerte</string>
+    <string name="safeTitle">Mi Caja Fuerte</string>
     <string name="addMoneyToSafeButton">Ingresar Dinero</string>
     <string name="withdrawMoneyFromSafeButton">Retirar Dinero</string>
     <string name="safeHistoryButton">Mis Movimientos</string>
     <string name="putMoneyLabel">Ingresa el monto a depositar</string>
     <string name="withMoneyLabel">Ingresa el monto a retirar</string>
 
-    <string name="paymentsTitle">Pagos</string>
+    <string name="paymentsTitle">Mis Pagos</string>
     <string name="makePaymentButton">Realizar Pago</string>
     <string name="paymentsHistoryButton">Historial de Pagos</string>
     <string name="entity">Entidad</string>
@@ -49,10 +51,12 @@
     <string name="history">Movimientos encontrados</string>
 
     <string name="movementsTitle">Mis Movimientos</string>
-    <string name="registerEntryButton">Registrar Ingresos</string>
-    <string name="registerExpenseButton">Registrar Gastos</string>
-    <string name="movementsHistoryButton">Ver Movimientos</string>
+    <string name="registerEntryButton">Agregar Ingreso</string>
+    <string name="registerExpenseButton">Agregar Gasto</string>
+    <string name="movementsHistoryButton">Mis Movimientos</string>
     <string name="putData">Ingrese la información solicitada</string>
+    <string name="regEntryTitle">Agregar Ingreso</string>
+    <string name="regExpenseTitle">Agregar Gasto</string>
     <string name="mount">Monto</string>
     <string name="concept">Concepto</string>
     <string name="addEntry">Agregar Ingreso</string>

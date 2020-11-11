@@ -38,9 +38,6 @@ class MenuFragment : Fragment() {
             findNavController().navigate(R.id.menu_to_obligations)
         })
 
-        balanceButton?.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.menu_to_balance)
-        })
 
         safeButton?.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.menu_to_safe)

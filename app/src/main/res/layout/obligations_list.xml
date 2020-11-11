@@ -53,7 +53,7 @@
             android:layout_marginStart="@dimen/normal_margin"
             android:textSize="@dimen/normal_font_size"
             android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/obligationMount"
+            app:layout_constraintTop_toBottomOf="@id/obligationAmount"
             app:layout_constraintBottom_toBottomOf="parent"
             >
 

@@ -16,7 +16,7 @@ class RegisterObligationFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.register_entry_fragment, container, false)
+        return inflater.inflate(R.layout.add_obligation_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

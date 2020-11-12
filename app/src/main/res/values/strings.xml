@@ -42,6 +42,7 @@
     <string name="piggybankSendButton">Envío a PiggyBanker</string>
     <string name="sendingHistoryButton">Historial de Envíos</string>
     <string name="piggybankerNumber">ID del Piggybanker</string>
+    <string name="piggybanker">Nombre PiggyBanker</string>
 
     <string name="obligationsTitle">Mis Obligaciones</string>
     <string name="addObligationButton">Añadir Obligación</string>

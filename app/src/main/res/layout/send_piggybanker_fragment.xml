@@ -3,9 +3,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-
+    <ImageView
+        android:id="@+id/logopiggybanker"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_top_special"
+        android:src="@drawable/piggyBanker_logo"
+        app:layout_constraintBottom_toTopOf="@id/sendTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/sendTitle"
         android:layout_width="wrap_content"
@@ -19,7 +29,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/logopiggybanker" />
 
     <TextView
         android:id="@+id/chooseLabel"
@@ -41,11 +51,9 @@
         android:id="@+id/piggybankerId"
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="@dimen/normal_margin"
         android:layout_marginTop="@dimen/big_margin"
         android:hint="@string/piggybankerNumber"
-
+        android:backgroundTint="@color/piggybank_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseLabel"
@@ -55,11 +63,9 @@
         android:id="@+id/mount"
         android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="@dimen/normal_margin"
         android:layout_marginTop="@dimen/big_margin"
         android:hint="@string/mount"
-
+        android:backgroundTint="@color/piggybank_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/piggybankerId"
@@ -70,14 +76,16 @@
         android:id="@+id/sendMoneyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/big_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
         android:text="@string/sendMoneyTitle"
+        android:background="@drawable/border_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mount" />
+        app:layout_constraintTop_toBottomOf="@id/mount"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 

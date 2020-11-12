@@ -4,8 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/logomypay"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_top_menu_logo"
+        android:src="@drawable/payment_history_logo"
+        app:layout_constraintBottom_toTopOf="@id/movementsTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/movementsTitle"
@@ -20,7 +31,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/logomypay" />
 
     <TextView
         android:id="@+id/chooseLabel"
@@ -41,6 +52,7 @@
         android:id="@+id/recyclerViewPayments"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="@dimen/normal_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseLabel"
         tools:listitem="@layout/payments_list_item">

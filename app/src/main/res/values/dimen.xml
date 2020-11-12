@@ -17,4 +17,5 @@
     <dimen name="extended_buttons_height">60dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="smallText">12sp</dimen>
+    <dimen name="margin_top_special">32sp</dimen>
 </resources>

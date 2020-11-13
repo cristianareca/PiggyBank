@@ -3,8 +3,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_top_special"
+        android:src="@drawable/safe_money_logo"
+        app:layout_constraintBottom_toTopOf="@id/safeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/safeTitle"
@@ -19,7 +30,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <TextView
         android:id="@+id/chooseLabel"
@@ -58,10 +69,12 @@
         android:layout_marginTop="@dimen/big_margin"
         android:width="@dimen/buttons_width"
         android:height="@dimen/buttons_height"
+        android:background="@drawable/border_button"
         android:text="@string/withdrawMoneyFromSafeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moneyEditText" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

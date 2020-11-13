@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/border_recycler_item"
         >
         <TextView
             android:layout_width="match_parent"
@@ -55,6 +56,7 @@
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/safeConcept"
             app:layout_constraintBottom_toBottomOf="parent"
+
             >
 
         </TextView>

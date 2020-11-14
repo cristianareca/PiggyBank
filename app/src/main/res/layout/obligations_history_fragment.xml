@@ -4,15 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_top_menu_logo"
+        android:src="@drawable/obligations_history_logo"
+        app:layout_constraintBottom_toTopOf="@id/obligationsTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/obligationsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/vertical_menu_elements_margin"
+        android:layout_margin="@dimen/big_margin"
         android:text="@string/obligationsTitle"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -20,14 +31,14 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <TextView
         android:id="@+id/chooseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/normal_margin"
-        android:layout_marginTop="@dimen/big_margin"
+        android:layout_margin="@dimen/normal_margin"
         android:text="@string/foundObligations"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -41,6 +52,7 @@
         android:id="@+id/recyclerViewObligation"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+         android:layout_margin="@dimen/normal_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chooseLabel"
         tools:listitem="@layout/obligations_list">

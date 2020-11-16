@@ -11,7 +11,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="@dimen/margin_top_special"
-        android:src="@drawable/piggyBanker_logo"
+        android:src="@drawable/piggybanker_logo"
         app:layout_constraintBottom_toTopOf="@id/sendTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
